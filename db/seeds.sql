@@ -1,3 +1,3 @@
 INSERT INTO burgers (name) 
 VALUES 
-    ('Sample Burger 1');
+    ('Sample Burger 1', 1);
