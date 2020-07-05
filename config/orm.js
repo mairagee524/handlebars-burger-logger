@@ -1,5 +1,5 @@
 // Import MySQL connection.
-var connection = require("./connection.js");
+const connection = require("./connection.js");
 
 // Helper function for SQL syntax.
 // Let's say we want to pass 3 values into the mySQL query.
@@ -7,9 +7,9 @@ var connection = require("./connection.js");
 // The above helper function loops through and creates an array of question marks - ["?", "?", "?"] - and turns it into a string.
 // ["?", "?", "?"].toString() => "?,?,?";
 function printBurgerInput(num) {
-  var arr = [];
+  let arr = [];
 
-  for (var i = 0; i < num; i++) {
+  for (let i = 0; i < num; i++) {
     arr.push("?");
   }
 
@@ -18,16 +18,19 @@ function printBurgerInput(num) {
 
 // Helper function to convert object key/value pairs to SQL syntax
 function objToSql(ob) {
-    console.log(ob);
+
+    // 'ob' is an object with 'burger' as property and the value is an array with individual rows, each with 'id', 'name', and 'ifEaten'
     
-  var arr = [];
+  let arr = [];
 
   // loop through the keys and push the key/value as a string int arr
-  for (var key in ob) {
-      console.log(key);
-      
-    var value = ob[key];
+  for (let key in ob) {
 
+      // 'ey' is SQL syntax
+      
+    let value = ob[key];
+
+    // 'value' is 
     console.log(value);
     
     // check to skip hidden properties
@@ -58,7 +61,7 @@ var orm = {
     });
   },
   create: function(table, cols, vals, cb) {
-    var queryString = "INSERT INTO " + table;
+    let queryString = "INSERT INTO " + table;
 
     queryString += " (";
     queryString += cols.toString();
