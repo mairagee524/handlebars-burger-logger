@@ -1,0 +1,26 @@
+{
+  "name": "handlebars-burger-logger",
+  "version": "1.0.0",
+  "description": "create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!), making sure to follow the MVC design pattern",
+  "main": "server.js",
+  "dependencies": {
+    "express-handlebars": "^4.0.5",
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mairagee524/handlebars-burger-logger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mairagee524/handlebars-burger-logger/issues"
+  },
+  "homepage": "https://github.com/mairagee524/handlebars-burger-logger#readme"
+}
