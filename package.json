@@ -4,8 +4,9 @@
   "description": "create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!), making sure to follow the MVC design pattern",
   "main": "server.js",
   "dependencies": {
-    "express-handlebars": "^4.0.5",
     "express": "^4.17.1",
+    "express-handlebars": "^4.0.5",
+    "mysql": "^2.18.1",
     "mysql2": "^2.1.0"
   },
   "devDependencies": {},
