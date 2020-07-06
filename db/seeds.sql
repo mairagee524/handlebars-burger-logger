@@ -1,3 +1,6 @@
 INSERT INTO burgers (name) 
 VALUES 
-    ('Sample Burger 1', 1);
+    ('Big Mac', 1);
+    ('Double Double', 0);
+    ('Quarter Pounder burger', 1);
+

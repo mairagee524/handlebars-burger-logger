@@ -1,10 +1,10 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
-$(function() {
+$(() => {
     $(".change-eat").on("click", function(event) {
-      var id = $(this).data("id");
-      var newEat = $(this).data("neweat");
+      let id = $(this).data("id");
+      let newEat = $(this).data("neweat");
   
-      var newEatState = {
+      let newEatState = {
         eaten: newEat
       };
   
@@ -13,7 +13,7 @@ $(function() {
         type: "PUT",
         data: newEatState
       }).then(
-        function() {
+        () => {
           console.log("changed eat to", newEat);
           // Reload the page to get the updated list
           location.reload();
@@ -25,7 +25,7 @@ $(function() {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
   
-      var newBurger = {
+      let newBurger = {
         name: $("#ca").val().trim(),
         eaten: $("[name=eaten]:checked").val().trim()
       };
@@ -35,7 +35,7 @@ $(function() {
         type: "POST",
         data: newBurger
       }).then(
-        function() {
+        () => {
           console.log("created new burger");
           // Reload the page to get the updated list
           location.reload();
@@ -44,13 +44,13 @@ $(function() {
     });
   
     $(".delete-burger").on("click", function(event) {
-      var id = $(this).data("id");
+      let id = $(this).data("id");
   
       // Send the DELETE request.
       $.ajax("/api/burgers/" + id, {
         type: "DELETE"
       }).then(
-        function() {
+        () => {
           console.log("deleted burger", id);
           // Reload the page to get the updated list
           location.reload();
