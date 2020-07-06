@@ -1,19 +1,64 @@
+body {
+  background-color: rgb(241, 188, 135);
+}
+
+h1, .add-burger {
+  text-align: center;
+}
+
+
+.container, .img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.placeholder {
+  width: 100px;
+}
+
+.left, .right {
+  width: 400px;
+}
+
 li {
-    padding: 5px;
-    margin: 5px;
-    background: #faebd7;
-  }
+  padding: 5px;
+  margin: 5px;
+  background: #faebd7;
+}
+
+.add-burger {
+  width: 400px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.logo {
+  max-width: 70%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
   
-  .label {
-    font-weight: bold;
-  }
+.label {
+  font-weight: bold;
+}
   
-  .create-update-form {
-    padding: 5px;
-    margin: 5px;
-    background: aqua;
-  }
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
   
-  .form-group {
-    margin-bottom: 5px;
-  } 
+.form-group {
+  margin-bottom: 5px;
+} 
+
+#question {
+  text-align: left;
+}
+
+.placeholder-2 {
+  width: 20px;
+}
