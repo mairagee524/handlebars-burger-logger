@@ -1,67 +1,68 @@
 <img class="logo" src="assets/images/burger-logo.png" alt="Burger Logo">
 
-<h1>What Burgers Should I Eat? </h1>
+<div class="mainContainer">
+  <h1>What Burgers Should I Eat? </h1>
 
-<div class="container">
-  <div class="left">
-    <h2>Burgers to Eat!</h2>
+  <div class="container">
+    <div class="left">
+      <h2>Burgers to Eat!</h2>
 
-    <ul>
-      {{#each burgers}}
-        {{#unless eaten}}
-          {{> burgers/burger-block eat=true}}
-        {{/unless}}
-      {{/each}}
-    </ul>
-  </div>
-
-  <div class="placeholder"></div>
-
-  <div class="right">
-    <h2>Burgers that are eaten!</h2>
-    <ul>
-      {{#each burgers}}
-        {{#if eaten}}
-          {{> burgers/burger-block eat=false}}
-        {{/if}}
-      {{/each}}
-    </ul>
-  </div>
-</div>
-
-<div class="add-burger">
-  <h2>Add a Burger</h2>
-  <form class="create-form">
-    <div class="form-group">
-      <label for="ca">Burger Name:</label>
-      <textarea type="text" id="ca" name="name"></textarea>
+      <ul>
+        {{#each burgers}}
+          {{#unless eaten}}
+            {{> burgers/burger-block eat=true}}
+          {{/unless}}
+        {{/each}}
+      </ul>
     </div>
 
-    <br>
+    <div class="placeholder"></div>
 
-    <div id="question" class="form-group">
-      <label for="eaten">Eaten?</label><br>
-      <input type="radio" name="eaten" value="1" checked> Yep!<br>
-      <input type="radio" name="eaten" value="0"> Nope, but will eat later!
+    <div class="right">
+      <h2>Burgers that are Eaten!</h2>
+      <ul>
+        {{#each burgers}}
+          {{#if eaten}}
+            {{> burgers/burger-block eat=false}}
+          {{/if}}
+        {{/each}}
+      </ul>
     </div>
+  </div>
 
-    <br>
+  <div class="add-burger">
+    <h2>Add a Burger</h2>
+    <form class="create-form">
+      <div class="form-group">
+        <label for="ca">Burger Name:</label>
+        <textarea type="text" id="ca" name="name"></textarea>
+      </div>
 
-    <button type="submit">Add Burger</button>
+      <br>
 
-    <br><br><br>
+      <div id="question" class="form-group">
+        <label for="eaten">Eaten?</label>
+        <br>
+        <input type="radio" name="eaten" value="1" checked> Yep!
+        <br>
+        <input type="radio" name="eaten" value="0"> Nope, but will eat later!
+      </div>
 
+      <br>
+      <button class="submit" type="submit">Add Burger</button>
+      <br>
+      
+    </form>
+  </div>
+
+  <div class="humor-container">
     <h3>For your humor: </h3>
 
-    <br>
-   
-  </form>
-</div>
-
-<div class="img-container">
-  <img class="bob" src="assets/images/burger-meme.jpg" alt="Bob's Burger Meme">
-  <div class="placeholder-2"></div>
-  <img class="bob" src="assets/images/the-breakfast-club-burger.png" alt="Burger Logo">
-
+    <div class="img-container">
+      <img class="bob" src="assets/images/burger-meme.jpg" alt="Bob's Burger Meme">
+      <div class="placeholder-2"></div>
+      <img class="bob" src="assets/images/the-breakfast-club-burger.png" alt="Burger Logo">
+    </div>
+  </div>
 </div>
 

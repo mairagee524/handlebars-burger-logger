@@ -1,11 +1,27 @@
 body {
-  background-color: rgb(241, 188, 135);
+  background-color: #ffc38b;
+  font-family: 'Cabin', sans-serif;
+  /* rgb(241, 188, 135); */
+}
+
+h1, h2, h3 {
+  color: #fff3cd;
+}
+
+.mainContainer {
+  background-color: #4d3e3e;
+  border-radius: 20px;
+}
+
+h1{
+  padding-top: 30px;
+  font-family: 'Gorditas', cursive;  
+  font-size: 40px;
 }
 
 h1, .add-burger {
   text-align: center;
 }
-
 
 .container, .img-container {
   display: flex;
@@ -21,10 +37,47 @@ h1, .add-burger {
   width: 400px;
 }
 
+h2 {
+  font-family: 'Lobster', cursive;
+  font-size: 25px;
+}
+
 li {
-  padding: 5px;
+  padding: 10px;
   margin: 5px;
   background: #faebd7;
+}
+
+button {
+  color: #fff3cd;
+  font-size: 16px;
+  font-family:'Cabin', sans-serif; 
+}
+
+.change-eat {
+  background-color: #768948;
+  border-color: #768948;
+  border-radius: 40px;
+  padding: 5px;
+}
+
+.change-eat:hover {
+  transform: scale(1.1);
+  background-color: #a1b969;
+  border-color: #a1b969;
+}
+
+.delete-burger {
+  background-color: #7B886B;
+  border-color: #7B886B;
+  border-radius: 40px;
+  padding: 5px;
+}
+
+.delete-burger:hover {
+  transform: scale(1.1);
+  background-color: rgb(163, 179, 144);
+  border-color: rgb(163, 179, 144);
 }
 
 .add-burger {
@@ -32,33 +85,54 @@ li {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  padding-bottom: 10px;
 }
 
-.logo {
+.logo, .mainContainer {
   max-width: 70%;
   display: block;
   margin-right: auto;
   margin-left: auto;
 }
   
-.label {
-  font-weight: bold;
-}
-  
-.create-update-form {
-  padding: 5px;
+.create-form {
+  padding: 20px;
   margin: 5px;
-  background: aqua;
+  background: #ff926b;
+  border-radius: 10px;
 }
   
 .form-group {
   margin-bottom: 5px;
 } 
 
-#question {
+#question , h3{
   text-align: left;
+}
+
+.submit {
+  background-color: #646355;
+  border-color: #646355;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.submit:hover {
+  transform: scale(1.1);
+  background-color: #8f8e7d;
+  border-color: #8f8e7d;
+}
+
+h3 {
+  margin-left: 130px;
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
 }
 
 .placeholder-2 {
   width: 20px;
+}
+
+.img-container {
+  padding-bottom: 30px;
 }
